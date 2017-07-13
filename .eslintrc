@@ -1,0 +1,36 @@
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "env": {
+    "browser": true,
+    "node": true,
+    "mocha": true
+  },
+  "rules": {
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/jsx-no-bind": 0,
+    "react/jsx-uses-react": 1,
+    "react/prefer-stateless-function": 0,
+    "react/prop-types": 0,
+    "react/require-default-props": 0,
+    "react/forbid-prop-types": 0,
+    "react/no-array-index-key": 0,
+    "class-methods-use-this": 0,
+    "arrow-body-style": 0,
+    "prefer-arrow-callback": 0,
+    "no-useless-concat": 0,
+    "func-names": 0,
+    "dot-notation": 0,
+    "linebreak-style": 0,
+    "global-require": 0,
+    "max-len": ["error", 120],
+    "import/prefer-default-export": 0,
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": ["**/*.test.js", "**/*.stories.js", "**/webpack.*.js"]}]
+  },
+  "parserOptions": {
+    "ecmaVersion": 2017,
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true
+    }
+  }
+}
